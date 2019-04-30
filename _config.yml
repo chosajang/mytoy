@@ -1,9 +1,9 @@
 # Setup
-title:        Project or Site name
-tagline:      A responsive theme for your project on GitHub Pages
-baseurl:      ""
+title:        조사장(ChoSaJang) Blog
+tagline:      조사장이 운영하는 github 개발 블로그입니다
+baseurl:      "http://chosajang.github.io"
 paginate:     1
-locale:       "en"
+locale:       "ko"
 
 # About/contact
 author:
