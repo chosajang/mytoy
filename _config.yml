@@ -1,7 +1,7 @@
 # Setup
 title:        조사장(ChoSaJang) Blog
 tagline:      조사장이 운영하는 github 개발 블로그입니다
-baseurl:      "http://chosajang.github.io"
+baseurl:      ""
 paginate:     1
 locale:       "ko"
 
