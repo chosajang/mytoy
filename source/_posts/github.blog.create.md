@@ -1,5 +1,5 @@
 ---
-title: Docker-Compose 설정
+title: GitHub 블로그 만들기
 date: 2020-01-07 12:33:21
 tags: ['post','docker']
 categories: []
@@ -8,7 +8,7 @@ permalink: ""
 ---
 
 <!-- excerpt -->
-docker-compose 설정 코드
+github
 <!-- more -->
 ### docker-compose
 ``` bash
