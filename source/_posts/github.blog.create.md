@@ -8,24 +8,19 @@ permalink: ""
 ---
 
 <!-- excerpt -->
-github
+### GitHub 로그인 
+GitHub 로그인 후, 우측 New 버튼을 클릭하여 저장소(Repository) 생성 메뉴로 들어갑니다
+
+<img src="/image/github.blog.create/01.gif" />
+
 <!-- more -->
-### docker-compose
-``` bash
-project-proxy:
-    container_name: project-proxy
-    image: nginx:latest
-    ports:
-        - "82:82"
-    volumes:
-        - ./nginx/project-proxy.conf:/etc/nginx/nginx.conf     
-project-web:
-    container_name: project-web
-    image: nginx:latest
-    expose:
-        - "8282"
-    volumes:
-        - /svc/git.repository/pipeline/source/project-web:/source
-        - ./nginx/project-web.conf:/etc/nginx/nginx.conf
-```
+### GitHub 저장소 생성
+
+<img src="/image/github.blog.create/02.gif" />
+
+### GitHub 저장소 생성완료
+
+<img src="/image/github.blog.create/03.gif" />
+
+
 <!-- toc -->
