@@ -55,7 +55,7 @@ GitHub으로 블로그 만들기! 시작!
 <img src="/image/github.blog.create/05.gif" />
 
 3. README.md 파일 내용 작성 후 커밋(저장)하기
-README.md 파일의 커밋 메세지를 작성 후 Commit new file 버튼을 클릭하여 작성을 완료합니다
+커밋 메세지를 작성 후 Commit new file 버튼을 클릭하여 작성을 완료합니다
 <img src="/image/github.blog.create/06.gif" />
 
 ### github.io 접속
