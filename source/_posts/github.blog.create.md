@@ -1,5 +1,5 @@
 ---
-title: GitHub으로 블로그 만들기
+title: GitHub으로 블로그 만들기 - 주소설정 -
 date: {{ date }}
 updated: {{ updated }}
 tags: ['github']
@@ -8,7 +8,7 @@ thumbnail: ""
 permalink: ""
 ---
 
-github 블로그 운영을 위해, 계정이름.github.io 주소를 설정합니다
+계정이름.github.io의 URL로 블로그 운영을 위한 github 설정
 
 <!-- more  -->
  > 예: https://chosajang.github.io 
