@@ -5,4 +5,4 @@ db.json
 node_modules/
 public/
 .deploy*/
-git add -f theme/vexo/source/image/
+git add -f themes/vexo/source/image/*
