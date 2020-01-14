@@ -1,0 +1,61 @@
+author: ChoSaJang
+description: ChoSaJang's blog
+keyword: 
+favicon: 
+
+excerpt_link: Read more
+
+menu:
+ Home: /
+ Tags: /tags/
+ Archives: /archives/
+ # Projects: /project/
+ About: /about/
+
+# highlight
+highlight:
+  tomorrow
+
+# catalog
+catalog: true
+
+# donate
+donate: false
+
+# qrcode
+qrcode: false
+
+# comment
+# you can set gitment, uyan or disqus
+comment: disqus
+
+# gitment config
+gitment_owner: chosajang
+gitment_repo: chosajang.github.io
+gitment_oauth_id: fa9c5c71d31a2f66104b
+gitment_oauth_secret: 996138d1822de8611dd9a8bb6f3448b4abb52ec5
+
+# uyan config
+# if you want to use uyan as your blog comment, plz remove/comment out gitment config
+baidu_id: 
+
+# disqus config
+disqus_shortname: chosajang
+
+about: 
+  banner: /image/about-bg.jpg
+  avatar: /image/hyun.jpg
+  description: "안녕하세요. 조사장입니다 :)<br/>영화CG 제작사 코코아비전에서 내부 툴 개발을 진행하고 있습니다.<br/>기획, 설계, 개발 전부하고 있어서 많이 힘듭니다."
+  email: jonny@chosajang.com
+  weibo_username: 
+  twitter_username: 
+  github_username: chosajang
+  zhihu_username: 
+  douban_username: 
+  linkedin_username:
+
+# MathJax Support
+mathjax:
+  enable: true
+  per_page: false
+  cdn: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML
