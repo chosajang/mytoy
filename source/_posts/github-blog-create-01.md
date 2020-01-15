@@ -1,25 +1,25 @@
 ---
-title: GitHub으로 블로그 만들기 - 주소설정 -
+title: GitHub 블로그 만들기 - 주소설정 -
 date: {{ date }}
 updated: {{ updated }}
 tags: ['github']
 ---
 
-계정이름.github.io의 URL로 블로그 운영을 위한 github 설정
-
-<!-- more  -->
+> 계정이름.github.io의 URL로 블로그 운영을 위한 설정
+<!-- more -->
 
 ### 시작하기에 앞서
 안녕하세요! 개발자로 일하고 있는 조사장입니다
-업무와 별개로 다양한 활동을 하는 수많은 개발자분들을 보면서 나도 새해에는 열심히 살아야지 하고 고민을 하다가 블로그를 시작하였습니다
+업무와 별개로 다양한 활동을 하는 수많은 개발자분들을 보면서 나도 새해에는 열심히 살아야지 하고 마음먹고 블로그를 시작하였습니다
 
 일반적인 블로그 서비스를 하는 곳은 굉장히 다양합니다
 - 블로그 플랫폼
  > <a href="https://brunch.co.kr/">브런치(Brunch)</a>
+ > <a href="https://medium.com/">미디엄(Medium)</a>
  > <a href="https://www.tistory.com/">티스토리(Tistory)</a>
- > <a href="http://blog.daum.net/">다음 블로그(Daum Blog)</a>
  > <a href="http://section.blog.naver.com">네이버 블로그(Naver Blog)</a>
  > <a href="https://wordpress.org/">워드프레스(Wordpress)</a>
+ > ..외에도 다양한 블로그 플랫폼이 있습니다
 
 하지만 많은 개발자분들이 github에서 활동을 하며, 모르는 부분을 검색하다보면 ****.github.io 주소를 통해 블로그가 나오는걸 보아왔습니다
 - 대표적인 Github 블로그 프레임워크
@@ -63,13 +63,17 @@ README.md 파일을 생성하여 간단한 문구를 작성 후, 결과를 확�
 1. 우측 하단의 Add a README 버튼 클릭합니다
 <img src="/image/github.blog.create/04.gif" />
 
-2. README.md 파일을 생성합니다.
-MD(Markdown) 란?
-특수기호와 문자를 이용한 간단한 구조의 문법을 사용하여 글 작성 후 HTML로 변환이 가능한 텍스트 기반의 마크업 언어입니다
-``` md
+2. README.md 파일을 생성합니다
+파일을 생성하면 레포지토리 이름과 설명을 포함하여 자동생성 되며, MarkDown 문법으로 작성되어있습니다
+{% codeblock README.md lang:md %}
 # chosajang.github.io
 GitHub으로 블로그 만들기! 시작!
-```
+{% endcodeblock %}
+> 마크다운(Markdown) 란?
+> 특수기호와 문자를 이용한 간단한 구조의 문법을 사용하여 글 작성 후 HTML로 변환이 가능한 텍스트 기반의 마크업 언어입니다
+>
+> <a href="https://gist.github.com/ihoneymon/652be052a0727ad59601">마크다운 작성법</a>
+
 <img src="/image/github.blog.create/05.gif" />
 
 3. README.md 파일 내용 작성 후 커밋(저장)하기
@@ -79,5 +83,3 @@ GitHub으로 블로그 만들기! 시작!
 ### github.io 접속
 내용 작성 후, https://chosajang.github.io 에 접속하여 아래와 같은 화면이 뜨면 성공!
 <img src="/image/github.blog.create/07.gif" />
-
-<!-- toc -->

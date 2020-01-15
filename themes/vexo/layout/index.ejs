@@ -10,7 +10,7 @@
       <% } %>
       <div class="article-summary">
         <% if (post.excerpt) { %>
-          <%- post.excerpt %>
+          <%- strip_html(post.excerpt) %>
         <% } else { %>
           <%- truncate(strip_html(post.content), { length: 150, omission: ' ...' }) %>
         <% } %>
