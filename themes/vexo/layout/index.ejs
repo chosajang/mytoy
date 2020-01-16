@@ -9,11 +9,15 @@
         <%- partial('_partial/tag', { tags: post.tags }) %>
       <% } %>
       <div class="article-summary">
-        <% if (post.excerpt) { %>
-          <%- strip_html(post.excerpt) %>
+        <% if (post.subtitle) { %>
+            <%- strip_html(post.subtitle) %>
         <% } else { %>
-          <%- truncate(strip_html(post.content), { length: 150, omission: ' ...' }) %>
-        <% } %>
+            <% if (post.excerpt) { %>
+                <%- post.excerpt %>
+            <% } else { %>
+                <%- truncate(strip_html(post.content), { length: 150, omission: ' ...' }) %>
+            <% } %>
+        <% }//      EO      if (post.subtitle) %>
       </div>
       <a class="more" href="<%- url_for(post.path) %>"><%- theme.excerpt_link %></a>
     </article>
