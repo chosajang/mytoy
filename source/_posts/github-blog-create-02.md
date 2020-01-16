@@ -1,6 +1,6 @@
 ---
 title: GitHub 블로그 만들기 - Hexo -
-date: {{ date }}
+date: 2020/01/16
 updated: {{ updated }}
 tags: ['github','hexo']
 subtitle: Hexo를 사용하여 블로그 생성하기
