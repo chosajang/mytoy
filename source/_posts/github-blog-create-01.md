@@ -10,17 +10,16 @@ subtitle: github.io로 블로그 운영을 위한 설정
 
 ### 시작하기에 앞서
 안녕하세요! 개발자로 일하고 있는 조사장입니다
-chosajang.github.io 첫 포스팅 입니다(와아아아ㅏ...)
+chosajang.github.io 첫 포스팅 입니다(와아~)
 업무와 별개로 다양한 활동을 하는 개발자분들을 보면서 나도 새해에는 더 열심히 살아야지, 하고 블로그를 시작하였습니다
 
-일반적인 블로그 서비스를 하는 곳은 굉장히 다양합니다
 - 블로그 플랫폼
  > <a href="https://brunch.co.kr/">브런치(Brunch)</a>
  > <a href="https://medium.com/">미디엄(Medium)</a>
  > <a href="https://www.tistory.com/">티스토리(Tistory)</a>
  > <a href="http://section.blog.naver.com">네이버 블로그(Naver Blog)</a>
  > <a href="https://wordpress.org/">워드프레스(Wordpress)</a>
- > ..외에도 다양한 블로그 플랫폼이 있습니다
+ > ..외에도 많은 블로그 플랫폼이 있습니다
 
 하지만 많은 개발자분들이 github에서 활동을 하며, 모르는 부분을 검색하다보면 ****.github.io 주소를 통해 블로그가 나오는걸 보아왔습니다
 - 대표적인 Github 블로그 프레임워크
