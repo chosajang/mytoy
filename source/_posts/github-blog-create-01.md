@@ -3,7 +3,7 @@ title: GitHub 블로그 만들기 - 주소설정 -
 date: 2020/01/11
 updated: {{ updated }}
 tags: ['github']
-subtitle: 계정이름.github.io의 URL로 블로그 운영을 위한 설정
+subtitle: github.io로 블로그 운영을 위한 설정
 ---
 
 <!-- more -->
