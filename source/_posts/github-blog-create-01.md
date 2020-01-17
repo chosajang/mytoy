@@ -27,7 +27,7 @@ chosajang.github.io 첫 포스팅 입니다(와아~)
  > <a href="https://gohugo.io/">휴고(Hugo)</a>
  > <a href="https://hexo.io/ko/">헥소(Hexo)</a>
 
-이런걸 정적 웹 생성기(Static Site Generator, SSG...슥?!)라고 하더군요
+이런걸 정적 사이트 생성기(Static Site Generator, SSG...슥?!)라고 하더군요
 무언가 개발자스러움이 느껴지지 않나요?!
 
 결정! github으로 블로그를 생성하고 글을 포스팅하기로 정했습니다
