@@ -1,6 +1,6 @@
 ---
 title: GitHub 블로그 만들기 - 주소설정 -
-date: 2020/01/13
+date: 2020/01/11
 updated: {{ updated }}
 tags: ['github']
 subtitle: 계정이름.github.io의 URL로 블로그 운영을 위한 설정
@@ -73,7 +73,7 @@ GitHub으로 블로그 만들기! 시작!
 > 마크다운(Markdown) 란?
 > 특수기호와 문자를 이용한 간단한 구조의 문법을 사용하여 글 작성 후 HTML로 변환이 가능한 텍스트 기반의 마크업 언어입니다
 >
-> <a href="https://gist.github.com/ihoneymon/652be052a0727ad59601">마크다운 작성법</a>
+> \- [마크다운 작성법](https://gist.github.com/ihoneymon/652be052a0727ad59601)(허니몬님의 Gist)
 
 <img src="/image/github.blog.create/05.gif" />
 
