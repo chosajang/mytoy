@@ -83,5 +83,7 @@ Hexo 설치 메세지를 확인하면 바로 Hexo 서버를 실행합니다
 INFO  Start processing
 INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.
 ```
-그리고 웹브라우저 주소창에 **localhost:4000** 라고 입력 후 아래와 같은 화면이 뜬다면 성공!
+그리고 웹브라우저 주소창에 **localhost:4000** 라고 입력 후 아래와 같이 나오면 성공!
 <img src="/image/github-blog-create-02/04.png" />
+
+다시 커맨드창에서 글 생성
