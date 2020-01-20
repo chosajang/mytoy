@@ -82,8 +82,9 @@ INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.
 그리고 웹브라우저 주소창에 **localhost:4000** 라고 입력 후 아래와 같이 나오면 성공!
 <img src="/image/github-blog-create-02/04.png" />
 
-### 정적 사이트 생성
-위에 Hexo server를 실행하여 내 PC에서 보는 화면은 정적 사이트로 생성된 화면이 아닙니다
+### 배포용 블로그 생성
+hexo init을 통해 생성된 폴더를 살펴보면 index.html도 없고 .md이나 .ejs있고 대체 어떻게 동작하는지 직관적이지 않습니다
+
 hexo init으로 생성한 hexo-blog 폴더 구조를 살펴보도록 하겠습니다
 ```
 # cd hexo-blog
