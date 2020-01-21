@@ -1,0 +1,4 @@
+User-agent: *
+Allow:/
+
+Sitemap: https://chosajang.github.io/post-sitemap.xml

@@ -39,16 +39,16 @@ subtitle: Hexo를 사용하여 블로그 생성하기
 
 <img src="/image/github-blog-create-02/02.png" />
 
+최근 인기도를 살펴보면 지킬(Jekyll)과 휴고(Hugo)가 압도적인데요
+저는 예전에 개발자 동생이 Hexo로 했다는 말이 생각나서 그냥 Hexo로 시작해 보았습니다..ㅡㅅ-;
+
 ### Hexo 란?
 토미 첸(Tommy Chen)이라는 개발자가 2012년에 만든 자바스크립트(Node.js) 기반의 정적 사이트 생성기 입니다
 Node.js의 인기와 중화권 개발자라는 특징으로 중국에서 인기가 많은것으로 생각됩니다
 <img src="/image/github-blog-create-02/03.png" />
 
-최근 인기도를 살펴보면 지킬(Jekyll)과 휴고(Hugo)가 압도적인데요
-저는 예전에 개발자 동생이 Hexo로 했다는 말이 생각나서 그냥 Hexo로 시작해 보았습니다..ㅡㅅ-;
-
 ### 설치하기
-Hexo는 npm(Node Package Manager)를 통해 설치할 수 있습니다
+Hexo는 npm(Node Package Manager)을 통해 설치할 수 있습니다
 사전에 Node.js와 git을 설치해야 Cli(Command Line Interface) 상에서 npm을 이용해 Hexo 설치 및 배포를 사용할 수 있습니다
 
 > [Node.js](https://nodejs.org/ko/) 설치하기
@@ -62,8 +62,10 @@ hexo 명령어를 어디서든 쓰기 위해 -g(전역)으로 설치하였습니
 
 ### 블로그 생성
 Node.js와 Git 그리고 hexo가 설치되었으면 블로그를 생성합니다
-(저는 hexo-blog라는 이름으로 생성하였습니다)
+(저는 E:\99.Project\hexo-blog라는 이름으로 생성하였습니다)
 ```
+# cd E:
+# mkdir 99.Project
 # hexo init hexo-blog
 INFO  Cloning hexo-starter https://github.com/hexojs/hexo-starter.git
 Cloning into 'E:\99.Project\hexo-blog'...
@@ -83,7 +85,10 @@ INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.
 <img src="/image/github-blog-create-02/04.png" />
 
 ### 배포용 블로그 생성
-hexo init을 통해 생성된 폴더를 살펴보면 index.html도 없고 .md이나 .ejs있고 대체 어떻게 동작하는지 직관적이지 않습니다
+hexo init을 통해 생성된 폴더를 살펴보면 index.html도 없고 .md나 .ejs는 있는데 대체 어떻게 동작하는지는 잘 모르겠습니다
+어떠한 형태로 블로그가 만들어지는 건지?
+글을 썼을때 어떻게 테마가 적용되는건지?
+자연스레 떠오르는 궁금증들을 해소하기 위해선 어느정도 구조를 알아야합니다
 
 hexo init으로 생성한 hexo-blog 폴더 구조를 살펴보도록 하겠습니다
 ```
@@ -136,6 +141,9 @@ INFO  38 files generated in 286 ms
 └ package-lock.json
 ```
 
+public 폴더를 살펴보면 css, js 폴더 및 html 파일들이 생성된 것을 알 수 있습니다
+hexo generate를 통해 상위의 scaffolds, source, themes안의 요소들이 public 폴더 밑으로 구조를 가지고 제작되었다고 이해하면 될 것 같습니다
+
 
 
 ### Git 배포
@@ -150,11 +158,14 @@ hexo용 git 배포 플러그인을 설치합니다
 # npm install hexo-deployer-git --save
 ```
 
-2. Hexo _config.yml 수정
-type : git
-repo : 저장소 주소
-branch : 브런치명
-message : 배포 메세지
+2. _config.yml 수정
+hexo-blog 폴더안에 _config.yml 이라는 설정 파일이 있습니다
+내용을 살펴보면 블로그 작성자, 날짜형식등 다양한 설정정보가 담겨있는데요
+이중에 git 배포를 위한 **Deployment** 항목을 수정합니다
+- type : git
+- repo : 저장소 주소
+- branch : 브런치명
+- message : 배포 메세지
 ``` yml
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
