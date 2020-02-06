@@ -56,7 +56,7 @@ Hexo는 npm(Node Package Manager)을 통해 설치할 수 있습니다
 
 Hexo 설치
 ```
-# npm install hexo-cli -g
+$ npm install hexo-cli -g
 ```
 hexo 명령어를 어디서든 쓰기 위해 -g(전역)으로 설치하였습니다
 
@@ -64,9 +64,9 @@ hexo 명령어를 어디서든 쓰기 위해 -g(전역)으로 설치하였습니
 Node.js와 Git 그리고 hexo가 설치되었으면 블로그를 생성합니다
 (저는 E:\99.Project\hexo-blog라는 이름으로 생성하였습니다)
 ```
-# cd E:
-# mkdir 99.Project
-# hexo init hexo-blog
+$ cd E:
+$ mkdir 99.Project
+$ hexo init hexo-blog
 INFO  Cloning hexo-starter https://github.com/hexojs/hexo-starter.git
 Cloning into 'E:\99.Project\hexo-blog'...
 remote: Enumerating objects: 30, done.
@@ -76,8 +76,8 @@ INFO  Start blogging with Hexo!
 
 Hexo 설치가 완료되었으면 바로 Hexo 서버를 실행합니다
 ```
-# cd hexo-blog
-# hexo server
+$ cd hexo-blog
+$ hexo server
 INFO  Start processing
 INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.
 ```
@@ -86,37 +86,36 @@ INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.
 
 ### 배포용 블로그 생성
 hexo init을 통해 생성된 폴더를 살펴보면 index.html도 없고 .md나 .ejs는 있는데 대체 어떻게 동작하는지는 잘 모르겠습니다
-어떠한 형태로 블로그가 만들어지는 건지?
-글을 썼을때 어떻게 테마가 적용되는건지?
+**"대체 어떻게 블로그가 만들어지는 거지?"**
 자연스레 떠오르는 궁금증들을 해소하기 위해선 어느정도 구조를 알아야합니다
 
 hexo init으로 생성한 hexo-blog 폴더 구조를 살펴보도록 하겠습니다
 ```
-# cd hexo-blog
-┬ node_modules // npm install을 통해 설치한 node 모듈들
+$ cd hexo-blog
+┬ node_modules /* npm install을 통해 설치한 node 모듈들 */
 │ 
-├ scaffolds // 글 작성시 사용할 기본 포멧 정도로 생각하면 됩니다
+├ scaffolds /* 글 작성시 사용할 기본 포멧 정도로 생각하면 됩니다 */
 │ 
-├ source // 포스팅할 글 작성시 이곳에 글제목.md 파일이 생성됩니다
-│ ├ _draft // 임시 작성글 생성시 저장 폴더(hexo new draft)
-│ └ _posts // 발생글 생성시 저장 폴더(hexo new post)
+├ source /* 포스팅할 글 작성시 이곳에 글제목.md 파일이 생성됩니다 */
+│ ├ _draft /* 임시 작성글 생성시 저장 폴더(hexo new draft) */
+│ └ _posts /* 발생글 생성시 저장 폴더(hexo new post) */
 │
-├ themes // Hexo 블로그의 테마(디자인)가 설치됩니다. 기본 landscape
+├ themes /* Hexo 블로그의 테마(디자인)가 설치됩니다. 기본 landscape */
 │ 
-├ .gitignore // git commit시 제외할 폴더나 파일 목록이 작성되어있습니다
+├ .gitignore /* git commit시 제외할 폴더나 파일 목록이 작성되어있습니다 */
 │ 
-├ _config.yml // Hexo 설정 파일
+├ _config.yml /* Hexo 설정 파일 */
 │ 
-├ db.json // 데이터베이스입니다. json 타입으로 작성된 글에 대한 정보와 내용등이 있습니다
+├ db.json /* 데이터베이스입니다. json 타입으로 작성된 글에 대한 정보와 내용등이 있습니다 */
 │ 
-├ package.json // node 모듈 설치시 자동생성되며, Hexo 관련 어플리케이션 및 버전정보가 담겨있습니다.
+├ package.json /* node 모듈 설치시 자동생성되며, Hexo 관련 어플리케이션 및 버전정보가 담겨있습니다 */
 │ 
-└ package-lock.json // node 모듈 설치시 자동생성되며, npm 모듈 설치시 필요한 의존성 관계에 대한 정보가 있습니다
+└ package-lock.json /* node 모듈 설치시 자동생성되며, npm 모듈 설치시 필요한 의존성 관계에 대한 정보가 있습니다 */
 ```
 
 이제 Hexo를 통해 정적 사이트 생성을 합니다
 ```
-# hexo generate
+$ hexo generate
 INFO  Start processing
 INFO  Files loaded in 136 ms
 INFO  Generated: index.html
@@ -126,10 +125,10 @@ INFO  38 files generated in 286 ms
 
 이제 다시 폴더 구조를 살펴봅니다
 ```
-# cd hexo-blog
+$ cd hexo-blog
 ┬ node_modules
 │ 
-├ public // hexo generate를 통해 .md 파일이 .html로 변환되어 각 폴더에 생성됩니다
+├ public /* hexo generate를 통해 .md 파일이 .html로 변환되어 각 폴더에 생성됩니다 */
 │ 
 ├ scaffolds
 ├ source
@@ -155,7 +154,7 @@ Git에 배포를 하여 chosajang.github.io 주소로 볼 수 있도록 설정�
 hexo용 git 배포 플러그인을 설치합니다
 [Hexo 배포문서](https://hexo.io/ko/docs/one-command-deployment)를 살펴보면 아래와 같이 나와있습니다
 ```
-# npm install hexo-deployer-git --save
+$ npm install hexo-deployer-git --save
 ```
 
 2. _config.yml 수정
@@ -178,11 +177,11 @@ deploy:
 
 3. Hexo 배포
 ```
-# hexo clean // public 폴더 초기화
+$ hexo clean /* public 폴더 초기화 */
 
-# hexo generate // public 폴더 정적 사이트 생성
+$ hexo generate /* public 폴더 정적 사이트 생성 */
 
-# hexo deploy // git 배포
+$ hexo deploy /* git 배포 */
 ```
 
 이후 깃에 접속하여 hexo deploy를 통해 public 폴더 내용이 배포된 것을 확인할 수 있습니다
