@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>http://chosajang.github.io/2020/01/17/github-blog-create-02/</loc>
+        <lastmod>2020-02-10T14:32:31.999Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://chosajang.github.io/2020/02/07/hexo-blog-post/</loc>
         <lastmod>2020-02-09T13:06:32.781Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -18,14 +26,6 @@
     <url>
         <loc>http://chosajang.github.io/2020/01/11/github-blog-create-01/</loc>
         <lastmod>2020-02-08T10:58:52.047Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://chosajang.github.io/2020/01/17/github-blog-create-02/</loc>
-        <lastmod>2020-02-08T09:27:50.838Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
