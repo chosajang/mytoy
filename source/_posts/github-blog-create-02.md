@@ -2,7 +2,9 @@
 title: GitHub 블로그 만들기 - Hexo -
 date: 2020/01/17
 updated: {{ updated }}
-tags: ['github','hexo']
+tags: 
+ - github
+ - hexo
 subtitle: Hexo를 사용하여 블로그 생성하기
 ---
 
@@ -62,13 +64,13 @@ hexo 명령어를 어디서든 쓰기 위해 -g(전역)으로 설치하였습니
 
 ### 블로그 생성
 Node.js와 Git 그리고 hexo가 설치되었으면 블로그를 생성합니다
-(저는 E:\99.Project\hexo-blog라는 이름으로 생성하였습니다)
+(저는 D:\02.workspace\hexo-blog라는 이름으로 생성하였습니다)
 ```
-$ cd E:
-$ mkdir 99.Project
+$ cd D:
+$ mkdir 02.workspace
 $ hexo init hexo-blog
 INFO  Cloning hexo-starter https://github.com/hexojs/hexo-starter.git
-Cloning into 'E:\99.Project\hexo-blog'...
+Cloning into 'D:\02.workspace\hexo-blog'...
 remote: Enumerating objects: 30, done.
 ...
 INFO  Start blogging with Hexo!

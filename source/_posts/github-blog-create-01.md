@@ -2,7 +2,8 @@
 title: GitHub 블로그 만들기 - 주소설정 -
 date: 2020/01/11
 updated: {{ updated }}
-tags: ['github']
+tags: 
+ - github
 subtitle: github.io로 블로그 운영을 위한 설정
 ---
 
