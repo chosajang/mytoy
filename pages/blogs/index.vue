@@ -16,8 +16,8 @@
       </div>
       <div class="pagination-cutstom">
         <!-- Page Navigation -->
-        <!-- <nav aria-label="Page navigation">
-          <paginate
+        <nav aria-label="Page navigation">
+          <Paginate
             :pageCount="pageCount"
             :clickHandler="pageMove"
             :containerClass="'pagination justify-content-center'"
@@ -27,18 +27,22 @@
             :page-link-class="'page-link'"
             :next-class="'page-item'"
             :next-link-class="'page-link'">
-          </paginate>
-        </nav> -->
+          </Paginate>
+        </nav>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-// import { servicePostList } from '@/api';
+import { postList } from '@/api';
+import Paginate from 'vuejs-paginate';
 
 export default {
   layout: 'Service',
+  components:{
+    Paginate
+  },
   data () {
     return {
       itemList: [],
@@ -48,15 +52,19 @@ export default {
   },
   created () {
     const vm = this;
-    // servicePostList()
-    //   .then(response => {
-    //     if (response.data.result) {
-    //       vm.itemList = response.data.data;
-    //     }
-    //   })
-    //   .catch(error => {
-    //     console.log(error);
-    //   });
+    postList()
+      .then(response => {
+        console.log(response);
+        const data = response.data;
+        if (data.result) {
+          // vm.itemList = response.data.data;
+        } else {
+          // error : 목록을 가져오기 실패
+        }
+      })
+      .catch(error => {
+        console.log(error);
+      });
   },
   computed: {
     pageCount () {
@@ -91,7 +99,7 @@ export default {
   },
   methods: {
     postRead (postSeq) {
-      this.$router.push({ path: '/blogs/' + postSeq });
+      // this.$router.push({ path: '/blogs/' + postSeq });
     },
     pageMove (pageNum) {
       this.pageNum = pageNum - 1;
