@@ -42,7 +42,7 @@ github 계정이 필요하며, 없을경우 계정 생성 후 아래 내용을 �
 1. 로그인 후, 상단의 탭 메뉴들 중 Repositories 메뉴를 선택합니다
 2. 우측에 New 버튼을 눌러 저장소(Repository) 생성 메뉴로 들어갑니다
 
-<img src="/image/github.blog.create/01.gif" />
+<img src="/image/github-blog-create-01/01.gif" />
 
 3. 계정이름 + github.io를 붙여서 저장소 이름을 작성합니다
 이와 같은 규칙을 지켜야 github.io 주소로 서비스할 수 있다고 합니다
@@ -51,18 +51,18 @@ github 계정이 필요하며, 없을경우 계정 생성 후 아래 내용을 �
 
 4. 다른 설정 변경없이 "Create repository"버튼을 눌러서 저장소를 생성합니다
 
-<img src="/image/github.blog.create/02.gif" />
+<img src="/image/github-blog-create-01/02.gif" />
 
 저장소가 생성된 것을 확인 할 수 있습니다
 
-<img src="/image/github.blog.create/03.gif" />
+<img src="/image/github-blog-create-01/03.gif" />
 
 ### README.MD 작성
 저장소 생성 후, 해당 주소(chosajang.github.io)로 접속해도 화면이 뜨지 않을 것입니다
 README.md 파일을 생성하여 간단한 문구를 작성 후, 결과를 확인합니다
 
 1. 우측 하단의 Add a README 버튼 클릭합니다
-<img src="/image/github.blog.create/04.gif" />
+<img src="/image/github-blog-create-01/04.gif" />
 
 2. README.md 파일을 생성합니다
 파일을 생성하면 레포지토리 이름과 설명을 포함하여 자동생성 되며, MarkDown 문법으로 작성되어있습니다
@@ -75,12 +75,12 @@ GitHub으로 블로그 만들기! 시작!
 >
 > \- [마크다운 작성법](https://gist.github.com/ihoneymon/652be052a0727ad59601)(허니몬님의 Gist)
 
-<img src="/image/github.blog.create/05.gif" />
+<img src="/image/github-blog-create-01/05.gif" />
 
 3. README.md 파일 내용 작성 후 커밋(저장)하기
 커밋 메세지를 작성 후 Commit new file 버튼을 클릭하여 작성을 완료합니다
-<img src="/image/github.blog.create/06.gif" />
+<img src="/image/github-blog-create-01/06.gif" />
 
 ### github.io 접속
 내용 작성 후, https://chosajang.github.io 에 접속하여 아래와 같은 화면이 뜨면 성공!
-<img src="/image/github.blog.create/07.gif" />
+<img src="/image/github-blog-create-01/07.gif" />
