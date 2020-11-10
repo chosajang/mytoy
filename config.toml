@@ -1,7 +1,7 @@
 baseURL = "http://chosajang.github.io/"
 defaultContentLanguage = "en"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "ChoSaJang"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "LoveIt"
@@ -45,3 +45,8 @@ theme = "LoveIt"
   [markup.highlight]
     # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
+
+
+[author]
+  name = 'ChoSaJang'
+  email = 'enjoy.hyun@gmail.com'
