@@ -1,6 +1,6 @@
-baseURL = "http://chosajang.github.io/"
-languageCode = "en-us"
-title = "ChoSaJang Blog"
+# baseURL = "http://chosajang.github.io/"
+# languageCode = "en-us"
+# title = "ChoSaJang Blog"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "LoveIt"
@@ -72,7 +72,7 @@ theme = "LoveIt"
       # URL of the LOGO
       logo = ""
       # title name
-      name = ""
+      name = "ChoSaJang Blog"
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
@@ -210,7 +210,7 @@ theme = "LoveIt"
     XMPP = ""
     Matrix = ""
     Bilibili = ""
-    Email = "xxxx@xxxx.com"
+    Email = "enjoy.hyun@gmail.com"
     RSS = true # LoveIt NEW | 0.2.0
 
   # LoveIt CHANGED | 0.2.0 Page config
@@ -459,6 +459,46 @@ theme = "LoveIt"
     # whether to use object-fit-images to be compatible with older browsers
     objectFit = false
 
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Home"
+    url = "/"
+    # title will be shown when you hover on this menu link
+    title = ""
+    weight = 1
+  [[menu.main]]
+    identifier = "posts"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+    weight = 3
+  [[menu.main]]
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+    weight = 4
+
 # Markup related config in Hugo
 [markup]
   # Syntax Highlighting
@@ -490,8 +530,8 @@ theme = "LoveIt"
 
 # Author config
 [author]
-  name = "xxxx"
-  email = ""
+  name = "Jonny"
+  email = "enjoy.hyun@gmail.com"
   link = ""
 
 # Sitemap config
