@@ -130,7 +130,7 @@ theme = "LoveIt"
       # LoveIt CHANGED | 0.2.7 title shown in home page (HTML format is supported)
       title = ""
       # subtitle shown in home page
-      subtitle = "This is My New Hugo Site"
+      subtitle = "환영합니다!<br/>제가 작성한 글이 도움이 되었으면 합니다 :D"
       # whether to use typeit animation for subtitle
       typeit = true
       # whether to show social links
